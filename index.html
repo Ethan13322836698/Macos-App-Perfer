@@ -1,63 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>mac应用推荐网</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac 应用推荐网</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<style>
+  <style>
+    body {
+      font-family: "SF Pro Text"， Helvetica, Arial, sans-serif;
+      background-color: #f5f5f7;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
 
-	body{
-		background-color: grey;
-	}	
+    h1, h2 {
+      text-align: center;
+      color: #111;
+    }
 
-	</style>
+    。app-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 16px 20px;
+      margin: 16px auto;
+      max-width: 800px;
+    }
 
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    。app-card h3 {
+      margin-top: 0;
+      color: #007aff;
+    }
+
+    .command {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      font-family: monospace;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-top: 6px;
+    }
+
+    a {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    
-    <img src="favicon.ico"><br><br>
-	
-	搜索🔍按住Command + F<br><br>
-    
-	
-	超棒Mac应用推荐<br><br>
-	
-	
-	1.homebrew Mac的优秀包管理器一行命令解决应用安装不需要手动下载-->安装<br>
-	安装方式:运行命令"/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"即可安装 官网:<a href="https://brew.sh">点我<a><br><br>
-    
 
-    
-    <iframe width="1280" height="513" src="https://www.youtube.com/embed/IWJKRmFLn-g" title="How to Install Homebrew on Mac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+  <h1>超棒 Mac 应用推荐</h1>
+  <p style="text-align:center">目前已收录 6 款应用 | 搜索请使用 <b>Command + F</b></p>
 
-    
+  <h2>一、开发工具篇</h2>
 
+  <div class="app-card">
+    <h3>1. Homebrew</h3>
+    <p>Mac 的优秀包管理器，一行命令解决应用安装，不需要手动下载。</p>
+    <p class="command">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</p>
+    <p><a href="https://brew.sh" target="_blank">前往官网</a></p>
+  </div>
 
-    2.Ollama本地离线运行LLM(大语言模型)<br>
-    安装方法一:使用homebrew安装"brew install --casks ollama" 方法二:从官网安装<a href="https://ollama.com/download">点我<a><br><br>
+  <div class="app-card">
+    <h3>2. Ollama</h3>
+    <p>本地离线运行 LLM（大语言模型）。</p>
+    <p class="command">brew install --cask ollama</p>
+    <p><a href="https://ollama.com/download" target="_blank">前往官网</a></p>
+  </div>
 
-    
+  <div class="app-card">
+    <h3>3. Sublime Text</h3>
+    <p>强大、简洁的文本编辑器，编程体验优秀。</p>
+    <p class="command">brew install --cask sublime-text</p>
+    <p><a href="https://www.sublimetext.com/3" target="_blank">前往官网</a></p>
+  </div>
 
+  <div class="app-card">
+    <h3>4. Ghostty</h3>
+    <p>比 macOS 自带 Terminal 更快流畅，支持 GPU 加速、连字渲染、分屏。</p>
+    <p class="command">brew install ghostty</p>
+    <p><a href="https://ghostty.org" target="_blank">前往官网</a></p>
+  </div>
 
-    3.Sublime Text文本编辑器(作者推荐)<br>
-    一款强大、简洁、的文本编辑器同时还拥有优秀的编程体验<a href="https://www.sublimetext.com/3">前往官网<a><br><br>
+  <h2>二、隐私与安全篇</h2>
 
+  <div class="app-card">
+    <h3>1. Tor Browser</h3>
+    <p>基于 Firefox 的匿名浏览器，洋葱路由隐藏身份，防追踪防审查。</p>
+    <p><a href="https://www.torproject.org/zh-CN/download/" target="_blank">前往官网</a></p>
+  </div>
 
+  <div class="app-card">
+    <h3>2. Signal</h3>
+    <p>注重隐私的即时通讯软件，端到端加密，开源透明。</p>
+    <p><a href="https://signal.org/download/" target="_blank">前往官网</a></p>
+  </div>
 
-    4.Ghostty<br>
-    Ghostty 比 macOS 自带 Terminal 更快更流畅，支持 GPU 加速、连字渲染、分屏与现代配置，功能更强大，更新更活跃。
-    <a href="https://ghostty.org/">点我跳到官网<a><br><br>
-
-
-
-
-
+  <div class="footer">
     持续更新中...<br><br>
-    
-    <img src="image/i_am_tux.png">
-
+    <img src="image/i_am_tux.png" alt="Tux Logo" width="120">
+  </div>
 
 </body>
 </html>
